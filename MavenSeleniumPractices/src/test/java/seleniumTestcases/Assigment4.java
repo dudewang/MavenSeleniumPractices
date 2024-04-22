@@ -3,6 +3,7 @@ package seleniumTestcases;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -27,10 +28,15 @@ public class Assigment4 {
 				WebDriverManager.firefoxdriver().setup();
 				driver = new ChromeDriver();
 			}
-			else
+			else if(browser == "edge")
 			{
 				WebDriverManager.edgedriver().setup();
 				driver = new ChromeDriver();
+			}
+			else
+			{
+				WebDriverManager.iedriver().setup();
+				driver = new InternetExplorerDriver();
 			}
 			
 		}
