@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+
+	<groups>
+		<run>
+			<include name="smoke"></include>
+			<exclude name="regression"></exclude>
+		</run>
+	</groups>
+
+	<!-- <listeners> <listener class-name="customListeners.Listeners"></listener> 
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener> </listeners> -->
+
+	<test name="Validating Dependency" enabled="false">
+		<classes>
+			<class name="testNGTestcases.DependencyOnMethodsNGroups" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Validating Test Groups" enabled="true">
+		<classes>
+			<class name="testNGTestcases.TestGroups" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

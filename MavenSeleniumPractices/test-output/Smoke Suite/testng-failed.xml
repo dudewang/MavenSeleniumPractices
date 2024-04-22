@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke Suite]">
+  <test thread-count="5" name="Validating Test Groups(failed)">
+    <groups>
+      <run>
+        <exclude name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNGTestcases.TestGroups">
+        <methods>
+          <include name="test2"/>
+          <include name="test5"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- testNGTestcases.TestGroups -->
+    </classes>
+  </test> <!-- Validating Test Groups(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->

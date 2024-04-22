@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (0)]">
+  <test thread-count="5" name="ValidatingTitle(failed)">
+    <classes>
+      <class name="testcases.TestNGTesting2">
+        <methods>
+          <include name="validateTestcase"/>
+        </methods>
+      </class> <!-- testcases.TestNGTesting2 -->
+    </classes>
+  </test> <!-- ValidatingTitle(failed) -->
+  <test thread-count="5" name="CheckingSoftAssertion(failed)">
+    <classes>
+      <class name="testcases.TestNGTesting3">
+        <methods>
+          <include name="validateTest"/>
+        </methods>
+      </class> <!-- testcases.TestNGTesting3 -->
+      <class name="testcases.TestNGTesting4">
+        <methods>
+          <include name="validatingImage"/>
+          <include name="doLogin"/>
+          <include name="doUserRegister"/>
+        </methods>
+      </class> <!-- testcases.TestNGTesting4 -->
+    </classes>
+  </test> <!-- CheckingSoftAssertion(failed) -->
+  <test thread-count="5" name="CheckingDependency(failed)">
+    <classes>
+      <class name="testcases.TestNGTesting4">
+        <methods>
+          <include name="validatingImage"/>
+          <include name="doLogin"/>
+          <include name="doUserRegister"/>
+        </methods>
+      </class> <!-- testcases.TestNGTesting4 -->
+    </classes>
+  </test> <!-- CheckingDependency(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->

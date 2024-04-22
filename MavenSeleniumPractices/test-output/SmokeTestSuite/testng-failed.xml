@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeTestSuite]">
+  <test thread-count="5" name="Validating Invocation Count(failed)">
+    <classes>
+      <class name="testNGTestcases.InvocationCountTesting">
+        <methods>
+          <include name="doLogin1"/>
+        </methods>
+      </class> <!-- testNGTestcases.InvocationCountTesting -->
+    </classes>
+  </test> <!-- Validating Invocation Count(failed) -->
+  <test thread-count="5" name="Validating Soft Assertion(failed)">
+    <classes>
+      <class name="testNGTestcases.SoftAssertion">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testNGTestcases.SoftAssertion -->
+    </classes>
+  </test> <!-- Validating Soft Assertion(failed) -->
+  <test thread-count="5" name="Validating Dependency(failed)">
+    <classes>
+      <class name="testNGTestcases.DependencyOnMethodsNGroups">
+        <methods>
+          <include name="doUserRegister"/>
+          <include name="setUp"/>
+          <include name="doLogin"/>
+          <include name="tearDown"/>
+          <include name="validatingImage"/>
+          <include name="validatingSubmitBtn"/>
+        </methods>
+      </class> <!-- testNGTestcases.DependencyOnMethodsNGroups -->
+    </classes>
+  </test> <!-- Validating Dependency(failed) -->
+</suite> <!-- Failed suite [SmokeTestSuite] -->

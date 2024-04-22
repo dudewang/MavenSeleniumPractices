@@ -1,0 +1,10 @@
+NoClassDefFoundError - Resolved by adding correct apache.commons dependency
+
+ElementNotInteractableExpection - Resolved by Explicitly wait
+
+NoSuchElementExpection - Resolved by Implicitly wait
+
+StaleElementException - Resolved by Explicitly wait and reidentifying the element inside the 'try catch' block.
+
+NullPointerException
+
